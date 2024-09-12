@@ -1,3 +1,19 @@
+# Smart Recipe Book
+
+## APIs used
+
+https://www.themealdb.com/api.php
+https://docs.greptile.com/introduction
+
+## How to start frontend
+npm start
+
+## How to start backend
+cd myapp
+source venev/bin/activate
+flask run
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
