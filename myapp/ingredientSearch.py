@@ -28,8 +28,8 @@ def generate_signature(signature_base_string, consumer_secret, token_secret=''):
     return base64.b64encode(hashed.digest()).decode('utf-8')
 
 def searchIngredient(ingredient):
-    consumer_key = 'your_consumer_key'
-    consumer_secret = 'your_consumer_secret'
+    consumer_key = '1f750dcce56f493493fef31b0e2a115d'
+    consumer_secret = 'cf3a22a71284479383c1ad20cc89045e'
 
     oauth_params = {
         'oauth_consumer_key': consumer_key,
@@ -73,7 +73,7 @@ def searchIngredient(ingredient):
     foods = response_dict.get('foods', {}).get('food', [])
 
     # using regular experession to change format of food description to dictionary
-    pattern = r"Per (?P<amount>\d+g) - Calories: (?P<calories>\d+kcal) \| Fat: (?P<fat>\d+.\d+g) \| Carbs: (?P<carbs>\d+.\d+g) \| Protein: (?P<protein>\d+.\d+g)"
+    pattern = r"Per (?P<amount>[\d\s\w]+) - Calories: (?P<calories>\d+kcal) \| Fat: (?P<fat>\d+\.\d+g) \| Carbs: (?P<carbs>\d+\.\d+g) \| Protein: (?P<protein>\d+\.\d+g)"
 
     match = re.search(pattern, foods[0]['food_description'])
 
@@ -85,4 +85,4 @@ def searchIngredient(ingredient):
     return results
 
 # Test the function
-print(searchIngredient('plain flour'))
+print(searchIngredient('stirfry vegetables'))
