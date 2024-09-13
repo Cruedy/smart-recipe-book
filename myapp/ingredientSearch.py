@@ -7,6 +7,8 @@ import base64
 import uuid
 import json 
 import re
+from dotenv import load_dotenv
+import os
 
 # Helper functions
 def generate_nonce():
@@ -28,8 +30,9 @@ def generate_signature(signature_base_string, consumer_secret, token_secret=''):
     return base64.b64encode(hashed.digest()).decode('utf-8')
 
 def searchIngredient(ingredient):
-    consumer_key = '1f750dcce56f493493fef31b0e2a115d'
-    consumer_secret = 'cf3a22a71284479383c1ad20cc89045e'
+    load_dotenv()
+    consumer_key = os.getenv('consumer_key')
+    consumer_secret = os.getenv('consumer_secret')
 
     oauth_params = {
         'oauth_consumer_key': consumer_key,
@@ -55,14 +58,22 @@ def searchIngredient(ingredient):
     oauth_signature = generate_signature(signature_base_string, consumer_secret)
     all_params['oauth_signature'] = oauth_signature
 
-    def make_get_request(base_url, all_params):
-        conn = http.client.HTTPSConnection('platform.fatsecret.com')
-        query_string = urllib.parse.urlencode(all_params)
-        conn.request('GET', f'/rest/server.api?{query_string}')
-        response = conn.getresponse()
-        data = response.read().decode('utf-8')
-        conn.close()
-        return data
+    def make_get_request(base_url, all_params, retries=3, delay=2):
+        for attempt in range(retries):
+            try:
+                conn = http.client.HTTPSConnection('platform.fatsecret.com')
+                query_string = urllib.parse.urlencode(all_params)
+                conn.request('GET', f'/rest/server.api?{query_string}')
+                response = conn.getresponse()
+                data = response.read().decode('utf-8')
+                conn.close()
+                return data
+            except Exception as e:
+                print(f"Exception occurred: {e}. Retrying...")
+            # Wait before retrying the request
+            time.sleep(delay)
+        print("Max retries exceeded. Returning None.")
+        return None  # Return None if max retries are exceeded
 
     response = make_get_request(base_url, all_params)
     
@@ -79,7 +90,7 @@ def searchIngredient(ingredient):
     # print("foods_type:", type(foods))
     # print("foods:", foods)
     if foods == [] or foods == {}:
-        print(f"No results found for ingredient: {ingredient}")
+        # print(f"No results found for ingredient: {ingredient}")
         return None
     if type(foods) == dict:
         food_description = foods['food_description']
@@ -88,14 +99,14 @@ def searchIngredient(ingredient):
     
     # if foods
     if food_description == None:
-        print(f"Food description is None for ingredient: {ingredient}")
+        # print(f"Food description is None for ingredient: {ingredient}")
         return None
     # print("foods_description:", food_description)
     match = re.search(pattern, food_description)
 
     # print("match: ", match)
     if match == None:
-        print(f"Regex pattern did not match for ingredient: {ingredient}. Description: {food_description}")
+        # print(f"Regex pattern did not match for ingredient: {ingredient}. Description: {food_description}")
         return None
 
     nutrition = match.groupdict()
@@ -107,6 +118,6 @@ def searchIngredient(ingredient):
     return results
 
 # Test the function
-print(searchIngredient("1 cup Toor dal"))
+# print(searchIngredient("1 cup Toor dal"))
 
 # ['1 lb Salmon', '1 tablespoon Olive oil', '2 tablespoons Soy Sauce', '2 tablespoons Sake', '4 tablespoons Sesame Seed']

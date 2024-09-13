@@ -176,5 +176,5 @@ def getRecipeNutrition(ingredients):
 # ingredient = "chicken_breast"
 # names, links, images, ids  = searchRecipe(ingredient)
 # ingredients, name = getIngredients(ids[6], names[6])
-ingredients = ['1 tsp  Sesame Seed Oil', '3 finely chopped Carrots', '3 finely chopped Celery', '6 chopped Spring Onions', '1 Packet Wonton Skin']
-print(sum(getRecipeNutrition(ingredients)))
+# ingredients = ['1 tsp  Sesame Seed Oil', '3 finely chopped Carrots', '3 finely chopped Celery', '6 chopped Spring Onions', '1 Packet Wonton Skin']
+# print(sum(getRecipeNutrition(ingredients)))
