@@ -107,6 +107,6 @@ def searchIngredient(ingredient):
     return results
 
 # Test the function
-# print(searchIngredient('3 tsp Baking Powder'))
+print(searchIngredient("1 cup Toor dal"))
 
 # ['1 lb Salmon', '1 tablespoon Olive oil', '2 tablespoons Soy Sauce', '2 tablespoons Sake', '4 tablespoons Sesame Seed']

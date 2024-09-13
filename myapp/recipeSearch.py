@@ -141,7 +141,7 @@ def getRecipeNutrition(ingredients):
         # print("ingredient: ", i)
         # print(type(i))
         nutrition_facts = searchIngredient(i)
-        print("nutrition_facts: ", nutrition_facts, i)
+        # print("nutrition_facts: ", nutrition_facts, i)
         # print("nutrition_facts", nutrition_facts)
         if nutrition_facts != None:
             cal_val = list(nutrition_facts.values())[0]['calories']
@@ -176,5 +176,5 @@ def getRecipeNutrition(ingredients):
 # ingredient = "chicken_breast"
 # names, links, images, ids  = searchRecipe(ingredient)
 # ingredients, name = getIngredients(ids[6], names[6])
-ingredients = ['500g strawberries', '400ml double cream', '3 x 7.5cm meringue nests', '1 tbsp ginger cordial', 'sprigs of fresh Mint']
-print(getRecipeNutrition(ingredients))
+ingredients = ['1 tsp  Sesame Seed Oil', '3 finely chopped Carrots', '3 finely chopped Celery', '6 chopped Spring Onions', '1 Packet Wonton Skin']
+print(sum(getRecipeNutrition(ingredients)))

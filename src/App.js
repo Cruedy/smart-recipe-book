@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Filter from './components/Filter';
 import React, {useEffect, useState} from 'react';
+import SearchBars from './components/SearchBars';
 
 function App() {
   const [backend, setBackend] = useState(0);
@@ -14,6 +15,8 @@ function App() {
   }, []);
   return (
     <div>
+      <h1>The Smart Recipe Book</h1>
+      <SearchBars></SearchBars>
       <Filter></Filter>
       <p>{backend}</p>
     </div>
