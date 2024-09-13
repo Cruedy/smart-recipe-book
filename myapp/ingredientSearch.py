@@ -75,14 +75,38 @@ def searchIngredient(ingredient):
     # using regular experession to change format of food description to dictionary
     pattern = r"Per (?P<amount>[\d\s\w]+) - Calories: (?P<calories>\d+kcal) \| Fat: (?P<fat>\d+\.\d+g) \| Carbs: (?P<carbs>\d+\.\d+g) \| Protein: (?P<protein>\d+\.\d+g)"
 
-    match = re.search(pattern, foods[0]['food_description'])
+    food_description = ""
+    # print("foods_type:", type(foods))
+    # print("foods:", foods)
+    if foods == [] or foods == {}:
+        print(f"No results found for ingredient: {ingredient}")
+        return None
+    if type(foods) == dict:
+        food_description = foods['food_description']
+    else:
+        food_description = foods[0].get('food_description', None)
+    
+    # if foods
+    if food_description == None:
+        print(f"Food description is None for ingredient: {ingredient}")
+        return None
+    # print("foods_description:", food_description)
+    match = re.search(pattern, food_description)
+
+    # print("match: ", match)
+    if match == None:
+        print(f"Regex pattern did not match for ingredient: {ingredient}. Description: {food_description}")
+        return None
 
     nutrition = match.groupdict()
     
+
     results = {}
     results[ingredient] = nutrition
-
+    # print("results", results)
     return results
 
 # Test the function
-print(searchIngredient('stirfry vegetables'))
+# print(searchIngredient('3 tsp Baking Powder'))
+
+# ['1 lb Salmon', '1 tablespoon Olive oil', '2 tablespoons Soy Sauce', '2 tablespoons Sake', '4 tablespoons Sesame Seed']
