@@ -1,5 +1,10 @@
 # Smart Recipe Book
 
+## How I used Greptile
+### Intro
+I used Greptile as a rate limit checker for my backend code. I'm using the Fat Secret Platform API:
+https://platform.fatsecret.com/docs/v4/food.get
+which has a rate limit of 5,000 calls per day. In my code, I have to make over 5,000 calls to the api in order to gather information. Ive decreased the number of times this has to be done by gathering the information from the Fat Secret API, and creating a json file called recipes.json.
 ## APIs used
 
 https://www.themealdb.com/api.php
