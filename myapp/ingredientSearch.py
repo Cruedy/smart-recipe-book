@@ -31,11 +31,9 @@ def generate_signature(signature_base_string, consumer_secret, token_secret=''):
     return base64.b64encode(hashed.digest()).decode('utf-8')
 
 def searchIngredient(ingredient):
-    # load_dotenv()
-    # consumer_key = os.getenv('consumer_key')
-    # consumer_secret = os.getenv('consumer_secret')
-    consumer_key = '1f750dcce56f493493fef31b0e2a115d'
-    consumer_secret = 'cf3a22a71284479383c1ad20cc89045e'
+    load_dotenv()
+    consumer_key = os.getenv('consumer_key')
+    consumer_secret = os.getenv('consumer_secret')
 
     oauth_params = {
         'oauth_consumer_key': consumer_key,

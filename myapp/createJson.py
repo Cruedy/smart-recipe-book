@@ -2,6 +2,9 @@ import json
 from recipeSearch import *
 from ingredientSearch import *
 from rateLimitMonitor import rate_limited_api_call
+from rateLimitMonitor import RateLimitMonitor
+
+rate_monitor = RateLimitMonitor()
 
 def create_recipe_json(filename):
     all_recipes = getAllRecipes()
