@@ -19,7 +19,7 @@ github_token = os.getenv('PAT')
 api_call_count = 0
 
 def query_greptile(query):
-    repository_identifier = "github:main:cruedy/smart-recipe-book"
+    # repository_identifier = "github:main:cruedy/smart-recipe-book"
     url = "https://api.greptile.com/v2/query"
     
     headers = {
@@ -69,15 +69,22 @@ def rate_limited_api_call(api_function, *args, **kwargs):
     
     # Query Greptile for rate limit info
     rate_limit_info = query_greptile("What's the rate limit for the Fat Secret API?")
-    api_call_count_info = query_greptile("How many times is the Fat Secret API called in this codebase?")
+    api_call_count_info = query_greptile("Which functions call the Fat Secret API in this codebase?")
+
+    print("rate limit info: ", rate_limit_info)
+    print("call count info: ", api_call_count_info)
 
     if rate_limit_info is None or api_call_count_info is None:
         print("Warning: Unable to get rate limit information from Greptile. Using default values.")
         rate_limit = 5000  # Default value
         api_call_count = 0  # Default value
     else:
+        print("here")
+        print("here")
         rate_limit = parse_rate_limit(rate_limit_info)
         api_call_count = parse_api_call_count(api_call_count_info)
+        print("rate_limit: ", rate_limit)
+        print("api_call_count: ", api_call_count)
     
     # Parse the rate limit info and API call count
     # (You'd need to implement the parsing logic based on Greptile's response)

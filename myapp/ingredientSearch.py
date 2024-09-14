@@ -30,6 +30,7 @@ def generate_signature(signature_base_string, consumer_secret, token_secret=''):
     hashed = hmac.new(signing_key.encode('utf-8'), signature_base_string.encode('utf-8'), hashlib.sha1)
     return base64.b64encode(hashed.digest()).decode('utf-8')
 
+# Calls the Fat Secret API
 def searchIngredient(ingredient):
     load_dotenv()
     consumer_key = os.getenv('consumer_key')
