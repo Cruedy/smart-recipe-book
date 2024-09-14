@@ -9,6 +9,7 @@ import json
 import re
 from dotenv import load_dotenv
 import os
+from rateLimitMonitor import rate_limited_api_call
 
 # Helper functions
 def generate_nonce():
@@ -30,9 +31,11 @@ def generate_signature(signature_base_string, consumer_secret, token_secret=''):
     return base64.b64encode(hashed.digest()).decode('utf-8')
 
 def searchIngredient(ingredient):
-    load_dotenv()
-    consumer_key = os.getenv('consumer_key')
-    consumer_secret = os.getenv('consumer_secret')
+    # load_dotenv()
+    # consumer_key = os.getenv('consumer_key')
+    # consumer_secret = os.getenv('consumer_secret')
+    consumer_key = '1f750dcce56f493493fef31b0e2a115d'
+    consumer_secret = 'cf3a22a71284479383c1ad20cc89045e'
 
     oauth_params = {
         'oauth_consumer_key': consumer_key,
@@ -75,7 +78,8 @@ def searchIngredient(ingredient):
         print("Max retries exceeded. Returning None.")
         return None  # Return None if max retries are exceeded
 
-    response = make_get_request(base_url, all_params)
+    response = rate_limited_api_call(make_get_request, base_url, all_params)
+    # response = make_get_request(base_url, all_params)
     
     # Parse the JSON response into a dictionary
     response_dict = json.loads(response)

@@ -2,9 +2,12 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS 
 from recipeSearch import *
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from rateLimitMonitor import RateLimitMonitor
 
 app = Flask(__name__)
 CORS(app)
+
+rate_monitor = RateLimitMonitor()
 
 @app.route('/api/route', methods=['POST'])
 def returnFoodList():

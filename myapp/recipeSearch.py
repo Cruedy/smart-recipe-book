@@ -5,6 +5,7 @@ import re
 import string
 import concurrent.futures
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from rateLimitMonitor import rate_limited_api_call
 
 def getAllRecipes():
     recipes = []
@@ -32,40 +33,12 @@ def getAllRecipes():
 
     return recipes
 
-# recipes = getAllRecipes()
-# print(recipes)
-    
-
-    # recipes = []
-    # url_base = "https://www.themealdb.com/api/json/v1/1/search.php?f="
-    # for n in string.ascii_lowercase:
-    #     url = url_base + n
-    #     try:
-    #         with urllib.request.urlopen(url) as response:
-    #             data = json.loads(response.read().decode())
-    #             if data["meals"] != None:
-    #                 meal = []
-    #                 for d in data["meals"]:
-    #                     # print("meal: ", d)
-    #                     meal.append(d['strMeal'])
-    #                     meal.append("https://www.themealdb.com/meal/"+d['idMeal'])
-    #                     meal.append(d['strMealThumb'])
-    #                     meal.append(d['idMeal'])
-    #                     recipes.append(meal) 
-    #                     # print("meal1 :", len(meal))
-    #                     meal = []
-    #     except Exception as error:
-    #         print("Couldn't fetch recipe", error)
-    # return recipes 
-
 # print(getAllRecipes()) 
 
 def searchRecipe(ingredient):
     url = "https://www.themealdb.com/api/json/v1/1/filter.php?i=" + ingredient
     url_base = "https://www.themealdb.com/meal/"
 
-    recipeList = []
-    displayList = []
     try:
         # Open the URL and fetch the data
         with urllib.request.urlopen(url) as response:
@@ -138,11 +111,8 @@ def getRecipeNutrition(ingredients):
     carbs = 0.0
     protein = 0.0
     for i in ingredients:
-        # print("ingredient: ", i)
-        # print(type(i))
-        nutrition_facts = searchIngredient(i)
-        # print("nutrition_facts: ", nutrition_facts, i)
-        # print("nutrition_facts", nutrition_facts)
+        nutrition_facts = rate_limited_api_call(searchIngredient, i)
+        # nutrition_facts = searchIngredient(i)
         if nutrition_facts != None:
             cal_val = list(nutrition_facts.values())[0]['calories']
             cal_num = ''

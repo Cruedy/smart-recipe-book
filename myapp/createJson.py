@@ -1,6 +1,7 @@
 import json
 from recipeSearch import *
 from ingredientSearch import *
+from rateLimitMonitor import rate_limited_api_call
 
 def create_recipe_json(filename):
     all_recipes = getAllRecipes()
@@ -11,7 +12,7 @@ def create_recipe_json(filename):
         ingredients = getIngredients(idMeal)
         ingredient_details = {}
         for i in ingredients:
-            ingredient_details[i] = searchIngredient(i)
+            ingredient_details[i] = rate_limited_api_call(searchIngredient, i)
         print("ingredient details", ingredient_details, recipe)
         calories = fat = carbs = protein = 0.0 
         max = 0.0
@@ -45,7 +46,8 @@ def fixNutritionFacts(file):
             for ingredient_name, nutrition_fact in ingredients.items():
                 if nutrition_fact == "":
                     # If the nutrition fact is None, search for the ingredient's nutrition facts
-                    nutrition_facts = searchIngredient(ingredient_name)
+                    # nutrition_facts = searchIngredient(ingredient_name)
+                    nutrition_facts = rate_limited_api_call(searchIngredient, ingredient_name)
 
                     # print(f"Found nutrition facts for {ingredient_name}: {nutrition_facts}")
                     
@@ -62,6 +64,9 @@ def fixNutritionFacts(file):
     except FileNotFoundError:
         print("File not found.")
         return {}
+
+result = fixNutritionFacts('recipes.json')
+print(result)
     
 def fixTotalNutrition(file):
     try:
