@@ -29,6 +29,11 @@ cd myapp
 source .venv/bin/activate
 flask run
 
+### How to fill up recipes.json
+cd myapp
+source .venv/bin/activate
+python createJson.py
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
