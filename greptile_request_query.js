@@ -4,44 +4,14 @@ const path = require('path');
 
 const greptile_api_key = process.env.greptile_api_key;
 const github_token = process.env.PAT;
-
-// function insertAtLine(filePath, lineNumber, textToInsert) {
-//     // Read the file content
-//     fs.readFile(filePath, 'utf8', (err, data) => {
-//       if (err) {
-//         return console.error(`Error reading file: ${err.message}`);
-//       }
   
-//       // Split the file content by lines
-//       let lines = data.split('\n');
-  
-//       // Check if the line number is valid
-//       if (lineNumber < 0 || lineNumber > lines.length) {
-//         return console.error('Line number out of range');
-//       }
-  
-//       // Insert the text at the specific line
-//       lines.splice(lineNumber, 0, textToInsert);
-  
-//       // Join the lines back into a single string
-//       const updatedContent = lines.join('\n');
-  
-//       // Write the updated content back to the file
-//       fs.writeFile(filePath, updatedContent, 'utf8', (err) => {
-//         if (err) {
-//           return console.error(`Error writing file: ${err.message}`);
-//         }
-//         console.log('File updated successfully!');
-//       });
-//     });
-//   }
-  
-
 const queryPayload = {
     "messages": [
         {
             "id": "query-2",
-            "content": "Can you check my entire codebase write up markdown code about all files that I can put under the Code Description section in my ReadMe.md?",
+            "content": `Can you check my entire codebase including in the myapp directory and write up markdown code about 
+            all javascript, python, and json files that I wrote that I can put under the Code Description 
+            section in my ReadMe.md?`,
             "role": "user"
         }
     ],

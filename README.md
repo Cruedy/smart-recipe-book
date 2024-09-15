@@ -92,3 +92,42 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Developer Guide
 ## Code Description
+### /myapp/api.py
+The `/myapp/api.py` file defines a Flask web application that provides an API endpoint for filtering and returning recipes based on nutritional criteria and ingredients. It utilizes CORS for cross-origin requests and includes a rate limit monitoring feature.
+
+### Overall Summary
+The file sets up a Flask application with a single API endpoint (`/api/route`) that processes POST requests to filter recipes based on nutritional criteria and a specified ingredient. It reads from a `recipes.json` file and uses a helper function to retrieve recipe details.
+
+### Class and Function Summaries
+
+- **`app`**: An instance of the Flask application, which serves as the main entry point for handling web requests.
+
+- **`rate_monitor`**: An instance of the `RateLimitMonitor` class, which is presumably used to track and manage the rate of incoming requests to the API.
+
+- **`@app.route('/api/route', methods=['POST'])`**: A decorator that defines the `/api/route` endpoint, which accepts POST requests.
+
+- **`returnFoodList()`**: A function that processes a JSON request to filter and return a list of recipes based on specified nutritional criteria (calories, fat, carbs, protein) and an ingredient. It reads from a `recipes.json` file and utilizes the helper function `fromIngredient`.
+
+- **`fromIngredient(ingredient)`**: A helper function that takes an `ingredient` as input, retrieves recipe details (names, links, images, and IDs) using the `searchRecipe` function, and constructs a list of recipes, where each recipe is represented as a list containing the name, link, image, and ID.
+ing**:
+  - `.catch(error => console.error('Error:', error));`
+    - Catches and logs any errors that occur during the fetch request or response processing.
+ piece of text.
+ody>`**: Contains the content of the document.
+
+- **`<noscript>You need to enable JavaScript to run this app.</noscript>`**: Displays a message if JavaScript is disabled in the user's browser.
+
+- **`<div id="root"></div>`**: A placeholder div where the React application will be rendered.
+
+- **Comments**: Provide additional context about the file's purpose, usage of `%PUBLIC_URL%`, and instructions for development and production builds.
+ Python virtual environments, as well as provide command-line tools for package management and character encoding detection.
+ deployment of the Flask application, with a focus on maintaining a clean and organized codebase.
+ic, and testing configurations, facilitating a clean and maintainable codebase.
+*: Contains functional components (`Filter.jsx` and `SearchBars.jsx`).
+     - **`index.css`**: Default styles for the application.
+     - **`index.js`**: Entry point for the React app.
+     - **`reportWebVitals.js`**: Function for reporting web performance metrics.
+     - **`setupTests.js`**: Configures the testing environment for Jest.
+
+### Overall Functionality
+The project integrates a Flask backend for recipe management and a React frontend for user interaction, utilizing external APIs for data retrieval and management. It is structured for maintainability and ease of development, with clear separation of concerns across different components and scripts.

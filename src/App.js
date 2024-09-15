@@ -5,7 +5,6 @@ import React, {useEffect, useState} from 'react';
 import SearchBars from './components/SearchBars';
 
 function App() {
-  const [backend, setBackend] = useState(0);
   const [recipes, setRecipes] = useState([]);
 
   const handleSearch = async (searchData) => {
