@@ -1,11 +1,13 @@
 import json
 from recipeSearch import *
 from ingredientSearch import *
-from rateLimitMonitor import rate_limited_api_call
-from rateLimitMonitor import RateLimitMonitor
 
-rate_monitor = RateLimitMonitor()
-
+'''
+Description: Creates a json of all recipes, including the recipes id, name, image, link, calories, fat, carbs,
+protein, and ingredients. Each ingredient in ingredients also has it's calorie, fat, carb, and protein information.
+Parameters: filename - the name of the file that is created and writtten to
+Return: None
+''' 
 def create_recipe_json(filename):
     all_recipes = getAllRecipes()
     recipe_data = {}
@@ -15,8 +17,7 @@ def create_recipe_json(filename):
         ingredients = getIngredients(idMeal)
         ingredient_details = {}
         for i in ingredients:
-            ingredient_details[i] = rate_limited_api_call(searchIngredient, i)
-        print("ingredient details", ingredient_details, recipe)
+            ingredient_details[i] = searchIngredient(i)
         calories = fat = carbs = protein = 0.0 
         max = 0.0
         for i in range(10):
@@ -39,29 +40,38 @@ def create_recipe_json(filename):
     with open(filename, 'w') as json_file:
         json.dump(recipe_data, json_file, indent=4)
 
+'''
+Description: Checks each recipe in file, and fixes the nutrition facts of each ingredient using the Fat Secret API, which is
+called in searchIngredient(ingredient_name) function. This function was written because the Fat Secret API has a rate limit,
+which caused a problem when file was originally created.
+Parameters: filename - the name of the file that is created and writtten to
+Return: the recipe data from file
+''' 
 def fixNutritionFacts(file):
+    print('in this function')
     try:
         with open(file, 'r') as json_file:
             recipes_data = json.load(json_file)
         for k in recipes_data.keys():
+            print('id: ', k)
             recipe = recipes_data[k]
             ingredients = recipe.get('ingredients', {})  # Get the ingredients dictionary
             for ingredient_name, nutrition_fact in ingredients.items():
                 if nutrition_fact == "":
+                    print('nutrition fact:', ingredient_name)
+                    print('item: ', k)
                     # If the nutrition fact is None, search for the ingredient's nutrition facts
-                    # nutrition_facts = searchIngredient(ingredient_name)
-                    nutrition_facts = rate_limited_api_call(searchIngredient, ingredient_name)
-
+                    nutrition_facts = searchIngredient(ingredient_name)
                     # print(f"Found nutrition facts for {ingredient_name}: {nutrition_facts}")
                     
                     if nutrition_facts:
                         # Assuming the result from searchIngredient is a dictionary with the required nutrition data
                         ingredients[ingredient_name] = nutrition_facts
                         print("success: ", ingredients[ingredient_name])
+                        with open(file, 'w') as json_file:
+                            json.dump(recipes_data, json_file, indent=4)
                     else:
                         print(f"No nutrition facts found for {ingredient_name}")
-        with open(file, 'w') as json_file:
-            json.dump(recipes_data, json_file, indent=4)
 
         return recipes_data
     except FileNotFoundError:
@@ -70,7 +80,13 @@ def fixNutritionFacts(file):
 
 result = fixNutritionFacts('recipes.json')
 print(result)
-    
+
+'''
+Description: Sums up the calorie, fat, carb, and protein information from each ingredient to update each recipe's total 
+calorie, fat, carb, and protein information in file.
+Parameters: filename - the name of the file that is created and writtten to
+Return: empty json if file isn't found
+'''     
 def fixTotalNutrition(file):
     try:
         with open(file, 'r') as json_file:

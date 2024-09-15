@@ -5,8 +5,12 @@ import re
 import string
 import concurrent.futures
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from rateLimitMonitor import rate_limited_api_call
 
+'''
+Description: Gets all recipes in the mealdb api
+Parameters: None
+Return: all recipes in the mealdb api
+''' 
 def getAllRecipes():
     recipes = []
     url_base = "https://www.themealdb.com/api/json/v1/1/search.php?f="
@@ -33,8 +37,11 @@ def getAllRecipes():
 
     return recipes
 
-# print(getAllRecipes()) 
-
+'''
+Description: searches for a recipe using the mealdb api by ingredient
+Parameters: ingredient - ingredient that qualifies the recipes
+Return: the names, links, images, and ids of all recipes that contain ingredient
+''' 
 def searchRecipe(ingredient):
     url = "https://www.themealdb.com/api/json/v1/1/filter.php?i=" + ingredient
     url_base = "https://www.themealdb.com/meal/"
@@ -69,20 +76,23 @@ def searchRecipe(ingredient):
                     links.append(item[0])
                     images.append(item[1])
                     ids.append(item[3])
-                    # print(f"Recipe: {item[2]}, Link: {item[0]}, Image: {item[1]}")
                 return names, links, images, ids
             else:
                 print("No meals found.")
     except Exception as error:
         print("Couldn't fetch recipe", error)
 
+'''
+Description: gets all ingredients in a recipe
+Parameters: id - id value of recipe
+Return: a list of all ingredients in recipe
+''' 
 def getIngredients(id):
     ingredient_url = 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=' + id
     try:
         # Open the URL and fetch the data
         with urllib.request.urlopen(ingredient_url) as response:
             data = json.loads(response.read().decode())
-            # print(data['meals'][0])
 
             ingredient_keys = [key for key in data['meals'][0] if key.startswith('strIngredient')]
             measure_keys = [key for key in data['meals'][0] if key.startswith('strMeasure')]
@@ -105,14 +115,19 @@ def getIngredients(id):
         print("Couldn't fetch ingredients", error)
     pass
 
+'''
+Description: given a list of ingredients, uses searchIngredient(i) to get the calorie, fat, carb, and protein values of 
+the recipe
+Parameters: ingredients - a list of ingredients
+Return: the total calories, fat, carbs, and protein in a list of ingredients
+''' 
 def getRecipeNutrition(ingredients):
     calories = 0.0
     fat = 0.0
     carbs = 0.0
     protein = 0.0
     for i in ingredients:
-        nutrition_facts = rate_limited_api_call(searchIngredient, i)
-        # nutrition_facts = searchIngredient(i)
+        nutrition_facts = searchIngredient(i)
         if nutrition_facts != None:
             cal_val = list(nutrition_facts.values())[0]['calories']
             cal_num = ''
@@ -139,12 +154,3 @@ def getRecipeNutrition(ingredients):
             carbs += float(carb_num)
             protein += float(pro_num)
     return calories, fat, carbs, protein
-
-
-
-# id = '52772'
-# ingredient = "chicken_breast"
-# names, links, images, ids  = searchRecipe(ingredient)
-# ingredients, name = getIngredients(ids[6], names[6])
-# ingredients = ['1 tsp  Sesame Seed Oil', '3 finely chopped Carrots', '3 finely chopped Celery', '6 chopped Spring Onions', '1 Packet Wonton Skin']
-# print(sum(getRecipeNutrition(ingredients)))

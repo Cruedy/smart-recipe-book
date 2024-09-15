@@ -2121,7 +2121,15 @@
                     "protein": "0.00g"
                 }
             },
-            "2 x 400g Plum Tomatoes": "",
+            "2 x 400g Plum Tomatoes": {
+                "2 x 400g Plum Tomatoes": {
+                    "amount": "1 pouch",
+                    "calories": "130kcal",
+                    "fat": "2.00g",
+                    "carbs": "22.00g",
+                    "protein": "8.00g"
+                }
+            },
             "2 tbsp Tomato Ketchup": {
                 "2 tbsp Tomato Ketchup": {
                     "amount": "100g",
@@ -2131,7 +2139,15 @@
                     "protein": "1.74g"
                 }
             },
-            "2 tbsp Dark Brown Sugar": "",
+            "2 tbsp Dark Brown Sugar": {
+                "2 tbsp Dark Brown Sugar": {
+                    "amount": "100g",
+                    "calories": "377kcal",
+                    "fat": "0.00g",
+                    "carbs": "97.33g",
+                    "protein": "0.00g"
+                }
+            },
             "2 x 400g tins Borlotti Beans": "",
             "3 Onions": {
                 "3 Onions": {
@@ -2142,10 +2158,42 @@
                     "protein": "141.99g"
                 }
             },
-            "4 cloves Garlic": "",
-            "Dash Olive oil": "",
-            "300g Chorizo": "",
-            "2 tsp Cumin": "",
+            "4 cloves Garlic": {
+                "4 cloves Garlic": {
+                    "amount": "1 tbsp",
+                    "calories": "5kcal",
+                    "fat": "0.00g",
+                    "carbs": "1.00g",
+                    "protein": "0.00g"
+                }
+            },
+            "Dash Olive oil": {
+                "Dash Olive oil": {
+                    "amount": "100g",
+                    "calories": "884kcal",
+                    "fat": "100.00g",
+                    "carbs": "0.00g",
+                    "protein": "0.00g"
+                }
+            },
+            "300g Chorizo": {
+                "300g Chorizo": {
+                    "amount": "87g",
+                    "calories": "182kcal",
+                    "fat": "13.92g",
+                    "carbs": "1.82g",
+                    "protein": "11.41g"
+                }
+            },
+            "2 tsp Cumin": {
+                "2 tsp Cumin": {
+                    "amount": "100g",
+                    "calories": "375kcal",
+                    "fat": "22.27g",
+                    "carbs": "44.24g",
+                    "protein": "17.81g"
+                }
+            },
             "2 tsp All spice": {
                 "2 tsp All spice": {
                     "amount": "934g",
@@ -2164,7 +2212,15 @@
                     "protein": "5.98g"
                 }
             },
-            "1 large Cinnamon stick": ""
+            "1 large Cinnamon stick": {
+                "1 large Cinnamon stick": {
+                    "amount": "100g",
+                    "calories": "403kcal",
+                    "fat": "22.40g",
+                    "carbs": "44.60g",
+                    "protein": "7.00g"
+                }
+            }
         }
     },
     "52834": {
@@ -2194,7 +2250,15 @@
                     "protein": "0.35g"
                 }
             },
-            "Topping Parsley": "",
+            "Topping Parsley": {
+                "Topping Parsley": {
+                    "amount": "100g",
+                    "calories": "36kcal",
+                    "fat": "0.79g",
+                    "carbs": "6.33g",
+                    "protein": "2.97g"
+                }
+            },
             "1 Onions": {
                 "1 Onions": {
                     "amount": "2151g",
@@ -2213,8 +2277,24 @@
                     "protein": "4.00g"
                 }
             },
-            "1 tbsp Butter": "",
-            "250g Mushrooms": "",
+            "1 tbsp Butter": {
+                "1 tbsp Butter": {
+                    "amount": "100g",
+                    "calories": "717kcal",
+                    "fat": "81.11g",
+                    "carbs": "0.06g",
+                    "protein": "0.85g"
+                }
+            },
+            "250g Mushrooms": {
+                "250g Mushrooms": {
+                    "amount": "100g",
+                    "calories": "22kcal",
+                    "fat": "0.34g",
+                    "carbs": "3.28g",
+                    "protein": "3.09g"
+                }
+            },
             "500g Beef Fillet": {
                 "500g Beef Fillet": {
                     "amount": "100g",
@@ -2224,9 +2304,33 @@
                     "protein": "23.00g"
                 }
             },
-            "1tbsp Plain Flour": "",
-            "150g Creme Fraiche": "",
-            "1 tbsp English Mustard": ""
+            "1tbsp Plain Flour": {
+                "1tbsp Plain Flour": {
+                    "amount": "100g",
+                    "calories": "310kcal",
+                    "fat": "9.55g",
+                    "carbs": "48.84g",
+                    "protein": "7.30g"
+                }
+            },
+            "150g Creme Fraiche": {
+                "150g Creme Fraiche": {
+                    "amount": "411g",
+                    "calories": "1383kcal",
+                    "fat": "110.12g",
+                    "carbs": "90.06g",
+                    "protein": "13.90g"
+                }
+            },
+            "1 tbsp English Mustard": {
+                "1 tbsp English Mustard": {
+                    "amount": "100g",
+                    "calories": "66kcal",
+                    "fat": "3.11g",
+                    "carbs": "7.78g",
+                    "protein": "3.95g"
+                }
+            }
         }
     },
     "52842": {
@@ -2238,7 +2342,15 @@
         "carbs": 298.0,
         "protein": 1251.0,
         "ingredients": {
-            "2 tblsp  Rapeseed Oil": "",
+            "2 tblsp  Rapeseed Oil": {
+                "2 tblsp  Rapeseed Oil": {
+                    "amount": "100g",
+                    "calories": "884kcal",
+                    "fat": "100.00g",
+                    "carbs": "0.00g",
+                    "protein": "0.00g"
+                }
+            },
             "1 finely chopped  Onion": {
                 "1 finely chopped  Onion": {
                     "amount": "97g",
@@ -2248,13 +2360,69 @@
                     "protein": "12.51g"
                 }
             },
-            "1 Celery": "",
-            "1 sliced Leek": "",
-            "1 medium Potatoes": "",
-            "1 knob Butter": "",
-            "1 litre hot Vegetable Stock": "",
-            "1 Head chopped Broccoli": "",
-            "140g Stilton Cheese": ""
+            "1 Celery": {
+                "1 Celery": {
+                    "amount": "615g",
+                    "calories": "86kcal",
+                    "fat": "0.92g",
+                    "carbs": "16.54g",
+                    "protein": "3.75g"
+                }
+            },
+            "1 sliced Leek": {
+                "1 sliced Leek": {
+                    "amount": "1 cup",
+                    "calories": "50kcal",
+                    "fat": "0.00g",
+                    "carbs": "12.00g",
+                    "protein": "1.00g"
+                }
+            },
+            "1 medium Potatoes": {
+                "1 medium Potatoes": {
+                    "amount": "1 serving",
+                    "calories": "400kcal",
+                    "fat": "18.00g",
+                    "carbs": "46.00g",
+                    "protein": "5.00g"
+                }
+            },
+            "1 knob Butter": {
+                "1 knob Butter": {
+                    "amount": "100g",
+                    "calories": "717kcal",
+                    "fat": "81.11g",
+                    "carbs": "0.06g",
+                    "protein": "0.85g"
+                }
+            },
+            "1 litre hot Vegetable Stock": {
+                "1 litre hot Vegetable Stock": {
+                    "amount": "100g",
+                    "calories": "307kcal",
+                    "fat": "26.10g",
+                    "carbs": "4.45g",
+                    "protein": "12.65g"
+                }
+            },
+            "1 Head chopped Broccoli": {
+                "1 Head chopped Broccoli": {
+                    "amount": "100g",
+                    "calories": "146kcal",
+                    "fat": "5.50g",
+                    "carbs": "0.49g",
+                    "protein": "22.01g"
+                }
+            },
+            "140g Stilton Cheese": {
+                "140g Stilton Cheese": {
+                    "amount": "100g",
+                    "calories": "300kcal",
+                    "fat": "24.26g",
+                    "carbs": "0.46g",
+                    "protein": "19.80g"
+                }
+            }
         }
     },
     "52848": {
@@ -2266,11 +2434,51 @@
         "carbs": 0.0,
         "protein": 0.0,
         "ingredients": {
-            "8 large Sausages": "",
-            "1 Jar Tomato Sauce": "",
-            "1200g Butter Beans": "",
-            "1 tbls Black Treacle": "",
-            "1 tsp  English Mustard": ""
+            "8 large Sausages": {
+                "8 large Sausages": {
+                    "amount": "1 serving",
+                    "calories": "390kcal",
+                    "fat": "36.00g",
+                    "carbs": "1.00g",
+                    "protein": "15.00g"
+                }
+            },
+            "1 Jar Tomato Sauce": {
+                "1 Jar Tomato Sauce": {
+                    "amount": "100g",
+                    "calories": "74kcal",
+                    "fat": "2.38g",
+                    "carbs": "11.27g",
+                    "protein": "1.95g"
+                }
+            },
+            "1200g Butter Beans": {
+                "1200g Butter Beans": {
+                    "amount": "100g",
+                    "calories": "717kcal",
+                    "fat": "81.11g",
+                    "carbs": "0.06g",
+                    "protein": "0.85g"
+                }
+            },
+            "1 tbls Black Treacle": {
+                "1 tbls Black Treacle": {
+                    "amount": "150g",
+                    "calories": "1kcal",
+                    "fat": "0.00g",
+                    "carbs": "0.30g",
+                    "protein": "0.00g"
+                }
+            },
+            "1 tsp  English Mustard": {
+                "1 tsp  English Mustard": {
+                    "amount": "100g",
+                    "calories": "66kcal",
+                    "fat": "3.11g",
+                    "carbs": "7.78g",
+                    "protein": "3.95g"
+                }
+            }
         }
     },
     "52855": {
@@ -2282,13 +2490,69 @@
         "carbs": 0.0,
         "protein": 0.0,
         "ingredients": {
-            "1 large Banana": "",
-            "2 medium Eggs": "",
-            "pinch Baking Powder": "",
-            "spinkling Vanilla Extract": "",
-            "1 tsp  Oil": "",
-            "25g Pecan Nuts": "",
-            "125g Raspberries": ""
+            "1 large Banana": {
+                "1 large Banana": {
+                    "amount": "1 serving",
+                    "calories": "1410kcal",
+                    "fat": "68.00g",
+                    "carbs": "171.00g",
+                    "protein": "38.00g"
+                }
+            },
+            "2 medium Eggs": {
+                "2 medium Eggs": {
+                    "amount": "1 egg",
+                    "calories": "60kcal",
+                    "fat": "4.00g",
+                    "carbs": "0.00g",
+                    "protein": "6.00g"
+                }
+            },
+            "pinch Baking Powder": {
+                "pinch Baking Powder": {
+                    "amount": "201g",
+                    "calories": "652kcal",
+                    "fat": "23.67g",
+                    "carbs": "93.86g",
+                    "protein": "14.45g"
+                }
+            },
+            "spinkling Vanilla Extract": {
+                "spinkling Vanilla Extract": {
+                    "amount": "100g",
+                    "calories": "237kcal",
+                    "fat": "0.00g",
+                    "carbs": "2.41g",
+                    "protein": "0.05g"
+                }
+            },
+            "1 tsp  Oil": {
+                "1 tsp  Oil": {
+                    "amount": "1 serving",
+                    "calories": "40kcal",
+                    "fat": "4.50g",
+                    "carbs": "0.00g",
+                    "protein": "0.00g"
+                }
+            },
+            "25g Pecan Nuts": {
+                "25g Pecan Nuts": {
+                    "amount": "100g",
+                    "calories": "691kcal",
+                    "fat": "71.97g",
+                    "carbs": "13.86g",
+                    "protein": "9.17g"
+                }
+            },
+            "125g Raspberries": {
+                "125g Raspberries": {
+                    "amount": "100g",
+                    "calories": "52kcal",
+                    "fat": "0.65g",
+                    "carbs": "11.94g",
+                    "protein": "1.20g"
+                }
+            }
         }
     },
     "52873": {
@@ -2300,18 +2564,114 @@
         "carbs": 0.0,
         "protein": 2655.0,
         "ingredients": {
-            "2 tbs Olive Oil": "",
-            "200g Swede": "",
-            "150ml Red Wine": "",
-            "500g Beef Stock": "",
-            "2 Bay Leaf": "",
-            "3 tbs Thyme": "",
-            "3 tblsp chopped Parsley": "",
-            "125g Plain Flour": "",
-            "1 tsp  Baking Powder": "",
-            "60g Suet": "",
-            "Splash Water": "",
-            "25g Butter": "",
+            "2 tbs Olive Oil": {
+                "2 tbs Olive Oil": {
+                    "amount": "100g",
+                    "calories": "884kcal",
+                    "fat": "100.00g",
+                    "carbs": "0.00g",
+                    "protein": "0.00g"
+                }
+            },
+            "200g Swede": {
+                "200g Swede": {
+                    "amount": "1 tray",
+                    "calories": "620kcal",
+                    "fat": "39.00g",
+                    "carbs": "34.00g",
+                    "protein": "33.00g"
+                }
+            },
+            "150ml Red Wine": {
+                "150ml Red Wine": {
+                    "amount": "148g",
+                    "calories": "74kcal",
+                    "fat": "0.00g",
+                    "carbs": "2.41g",
+                    "protein": "0.06g"
+                }
+            },
+            "500g Beef Stock": {
+                "500g Beef Stock": {
+                    "amount": "100g",
+                    "calories": "3kcal",
+                    "fat": "0.08g",
+                    "carbs": "0.33g",
+                    "protein": "0.35g"
+                }
+            },
+            "2 Bay Leaf": {
+                "2 Bay Leaf": {
+                    "amount": "100g",
+                    "calories": "313kcal",
+                    "fat": "8.36g",
+                    "carbs": "74.97g",
+                    "protein": "7.61g"
+                }
+            },
+            "3 tbs Thyme": {
+                "3 tbs Thyme": {
+                    "amount": "100g",
+                    "calories": "101kcal",
+                    "fat": "1.68g",
+                    "carbs": "24.45g",
+                    "protein": "5.56g"
+                }
+            },
+            "3 tblsp chopped Parsley": {
+                "3 tblsp chopped Parsley": {
+                    "amount": "100g",
+                    "calories": "36kcal",
+                    "fat": "0.79g",
+                    "carbs": "6.33g",
+                    "protein": "2.97g"
+                }
+            },
+            "125g Plain Flour": {
+                "125g Plain Flour": {
+                    "amount": "100g",
+                    "calories": "310kcal",
+                    "fat": "9.55g",
+                    "carbs": "48.84g",
+                    "protein": "7.30g"
+                }
+            },
+            "1 tsp  Baking Powder": {
+                "1 tsp  Baking Powder": {
+                    "amount": "201g",
+                    "calories": "652kcal",
+                    "fat": "23.67g",
+                    "carbs": "93.86g",
+                    "protein": "14.45g"
+                }
+            },
+            "60g Suet": {
+                "60g Suet": {
+                    "amount": "100g",
+                    "calories": "854kcal",
+                    "fat": "94.00g",
+                    "carbs": "0.00g",
+                    "protein": "1.50g"
+                }
+            },
+            "Splash Water": {
+                "Splash Water": {
+                    "amount": "8 fl oz",
+                    "calories": "0kcal",
+                    "fat": "0.00g",
+                    "carbs": "0.00g",
+                    "protein": "0.00g"
+                }
+            },
+            "25g Butter": {
+                "25g Butter": {
+                    "amount": "1 bar",
+                    "calories": "120kcal",
+                    "fat": "7.00g",
+                    "carbs": "9.00g",
+                    "protein": "6.00g"
+                }
+            },
             "750g Beef": {
                 "750g Beef": {
                     "amount": "101g",
@@ -2321,12 +2681,60 @@
                     "protein": "26.55g"
                 }
             },
-            "2 tblsp  Plain Flour": "",
-            "2 cloves minced Garlic": "",
-            "175g Onions": "",
-            "150g Celery": "",
-            "150g Carrots": "",
-            "2 chopped Leek": ""
+            "2 tblsp  Plain Flour": {
+                "2 tblsp  Plain Flour": {
+                    "amount": "100g",
+                    "calories": "310kcal",
+                    "fat": "9.55g",
+                    "carbs": "48.84g",
+                    "protein": "7.30g"
+                }
+            },
+            "2 cloves minced Garlic": {
+                "2 cloves minced Garlic": {
+                    "amount": "3g",
+                    "calories": "4kcal",
+                    "fat": "0.02g",
+                    "carbs": "0.99g",
+                    "protein": "0.19g"
+                }
+            },
+            "175g Onions": {
+                "175g Onions": {
+                    "amount": "211g",
+                    "calories": "93kcal",
+                    "fat": "0.40g",
+                    "carbs": "21.31g",
+                    "protein": "2.85g"
+                }
+            },
+            "150g Celery": {
+                "150g Celery": {
+                    "amount": "276g",
+                    "calories": "210kcal",
+                    "fat": "13.52g",
+                    "carbs": "17.49g",
+                    "protein": "6.04g"
+                }
+            },
+            "150g Carrots": {
+                "150g Carrots": {
+                    "amount": "100g",
+                    "calories": "41kcal",
+                    "fat": "0.24g",
+                    "carbs": "9.58g",
+                    "protein": "0.93g"
+                }
+            },
+            "2 chopped Leek": {
+                "2 chopped Leek": {
+                    "amount": "100g",
+                    "calories": "61kcal",
+                    "fat": "0.30g",
+                    "carbs": "14.15g",
+                    "protein": "1.50g"
+                }
+            }
         }
     },
     "52874": {
@@ -2338,21 +2746,141 @@
         "carbs": 0.0,
         "protein": 0.0,
         "ingredients": {
-            "1kg Beef": "",
-            "2 free-range Egg Yolks": "",
-            "400g Puff Pastry": "",
-            "300g Green Beans": "",
-            "25g Butter": "",
-            "pinch Salt": "",
-            "pinch Pepper": "",
-            "2 tbs Plain Flour": "",
-            "2 tbs Rapeseed Oil": "",
-            "200ml Red Wine": "",
-            "400ml Beef Stock": "",
-            "1 finely sliced Onion": "",
-            "2 chopped Carrots": "",
-            "3 sprigs Thyme": "",
-            "2 tbs Mustard": ""
+            "1kg Beef": {
+                "1kg Beef": {
+                    "amount": "101g",
+                    "calories": "290kcal",
+                    "fat": "19.70g",
+                    "carbs": "0.00g",
+                    "protein": "26.55g"
+                }
+            },
+            "2 free-range Egg Yolks": {
+                "2 free-range Egg Yolks": {
+                    "amount": "83g",
+                    "calories": "136kcal",
+                    "fat": "9.71g",
+                    "carbs": "3.39g",
+                    "protein": "8.48g"
+                }
+            },
+            "400g Puff Pastry": {
+                "400g Puff Pastry": {
+                    "amount": "100g",
+                    "calories": "558kcal",
+                    "fat": "38.50g",
+                    "carbs": "45.70g",
+                    "protein": "7.40g"
+                }
+            },
+            "300g Green Beans": {
+                "300g Green Beans": {
+                    "amount": "585g",
+                    "calories": "444kcal",
+                    "fat": "17.78g",
+                    "carbs": "58.18g",
+                    "protein": "16.78g"
+                }
+            },
+            "25g Butter": {
+                "25g Butter": {
+                    "amount": "1 bar",
+                    "calories": "120kcal",
+                    "fat": "7.00g",
+                    "carbs": "9.00g",
+                    "protein": "6.00g"
+                }
+            },
+            "pinch Salt": {
+                "pinch Salt": {
+                    "amount": "15 chips",
+                    "calories": "150kcal",
+                    "fat": "10.00g",
+                    "carbs": "15.00g",
+                    "protein": "2.00g"
+                }
+            },
+            "pinch Pepper": {
+                "pinch Pepper": {
+                    "amount": "908g",
+                    "calories": "1326kcal",
+                    "fat": "85.71g",
+                    "carbs": "20.70g",
+                    "protein": "115.95g"
+                }
+            },
+            "2 tbs Plain Flour": {
+                "2 tbs Plain Flour": {
+                    "amount": "100g",
+                    "calories": "310kcal",
+                    "fat": "9.55g",
+                    "carbs": "48.84g",
+                    "protein": "7.30g"
+                }
+            },
+            "2 tbs Rapeseed Oil": {
+                "2 tbs Rapeseed Oil": {
+                    "amount": "100g",
+                    "calories": "884kcal",
+                    "fat": "100.00g",
+                    "carbs": "0.00g",
+                    "protein": "0.00g"
+                }
+            },
+            "200ml Red Wine": {
+                "200ml Red Wine": {
+                    "amount": "148g",
+                    "calories": "74kcal",
+                    "fat": "0.00g",
+                    "carbs": "2.41g",
+                    "protein": "0.06g"
+                }
+            },
+            "400ml Beef Stock": {
+                "400ml Beef Stock": {
+                    "amount": "100g",
+                    "calories": "3kcal",
+                    "fat": "0.08g",
+                    "carbs": "0.33g",
+                    "protein": "0.35g"
+                }
+            },
+            "1 finely sliced Onion": {
+                "1 finely sliced Onion": {
+                    "amount": "100g",
+                    "calories": "165kcal",
+                    "fat": "7.70g",
+                    "carbs": "0.50g",
+                    "protein": "22.00g"
+                }
+            },
+            "2 chopped Carrots": {
+                "2 chopped Carrots": {
+                    "amount": "300g",
+                    "calories": "681kcal",
+                    "fat": "49.80g",
+                    "carbs": "6.33g",
+                    "protein": "48.84g"
+                }
+            },
+            "3 sprigs Thyme": {
+                "3 sprigs Thyme": {
+                    "amount": "100g",
+                    "calories": "101kcal",
+                    "fat": "1.68g",
+                    "carbs": "24.45g",
+                    "protein": "5.56g"
+                }
+            },
+            "2 tbs Mustard": {
+                "2 tbs Mustard": {
+                    "amount": "100g",
+                    "calories": "66kcal",
+                    "fat": "3.11g",
+                    "carbs": "7.78g",
+                    "protein": "3.95g"
+                }
+            }
         }
     },
     "52878": {
@@ -2364,8 +2892,24 @@
         "carbs": 12414.0,
         "protein": 4283.0,
         "ingredients": {
-            "900g Beef": "",
-            "2 tbs Corn Flour": "",
+            "900g Beef": {
+                "900g Beef": {
+                    "amount": "101g",
+                    "calories": "290kcal",
+                    "fat": "19.70g",
+                    "carbs": "0.00g",
+                    "protein": "26.55g"
+                }
+            },
+            "2 tbs Corn Flour": {
+                "2 tbs Corn Flour": {
+                    "amount": "510g",
+                    "calories": "1106kcal",
+                    "fat": "23.39g",
+                    "carbs": "209.35g",
+                    "protein": "22.42g"
+                }
+            },
             "8 Oysters": "",
             "400g Plain Flour": {
                 "400g Plain Flour": {
@@ -2376,9 +2920,33 @@
                     "protein": "7.30g"
                 }
             },
-            "pinch Salt": "",
-            "250g Butter": "",
-            "To Glaze Eggs": "",
+            "pinch Salt": {
+                "pinch Salt": {
+                    "amount": "15 chips",
+                    "calories": "150kcal",
+                    "fat": "10.00g",
+                    "carbs": "15.00g",
+                    "protein": "2.00g"
+                }
+            },
+            "250g Butter": {
+                "250g Butter": {
+                    "amount": "100g",
+                    "calories": "717kcal",
+                    "fat": "81.11g",
+                    "carbs": "0.06g",
+                    "protein": "0.85g"
+                }
+            },
+            "To Glaze Eggs": {
+                "To Glaze Eggs": {
+                    "amount": "112g",
+                    "calories": "238kcal",
+                    "fat": "21.14g",
+                    "carbs": "1.38g",
+                    "protein": "10.36g"
+                }
+            },
             "3 tbs Olive Oil": {
                 "3 tbs Olive Oil": {
                     "amount": "100g",
@@ -2388,10 +2956,42 @@
                     "protein": "0.00g"
                 }
             },
-            "3 Shallots": "",
-            "2 cloves minced Garlic": "",
-            "125g Bacon": "",
-            "1 tbs chopped Thyme": "",
+            "3 Shallots": {
+                "3 Shallots": {
+                    "amount": "1 tbsp",
+                    "calories": "20kcal",
+                    "fat": "0.00g",
+                    "carbs": "5.00g",
+                    "protein": "1.00g"
+                }
+            },
+            "2 cloves minced Garlic": {
+                "2 cloves minced Garlic": {
+                    "amount": "3g",
+                    "calories": "4kcal",
+                    "fat": "0.02g",
+                    "carbs": "0.99g",
+                    "protein": "0.19g"
+                }
+            },
+            "125g Bacon": {
+                "125g Bacon": {
+                    "amount": "100g",
+                    "calories": "541kcal",
+                    "fat": "41.78g",
+                    "carbs": "1.43g",
+                    "protein": "37.04g"
+                }
+            },
+            "1 tbs chopped Thyme": {
+                "1 tbs chopped Thyme": {
+                    "amount": "300g",
+                    "calories": "681kcal",
+                    "fat": "49.80g",
+                    "carbs": "6.33g",
+                    "protein": "48.84g"
+                }
+            },
             "2 Bay Leaf": {
                 "2 Bay Leaf": {
                     "amount": "100g",
@@ -3070,7 +3670,15 @@
                     "protein": "21.16g"
                 }
             },
-            "for frying Oil": ""
+            "for frying Oil": {
+                "for frying Oil": {
+                    "amount": "100g",
+                    "calories": "884kcal",
+                    "fat": "100.00g",
+                    "carbs": "0.00g",
+                    "protein": "0.00g"
+                }
+            }
         }
     },
     "52940": {
@@ -3082,8 +3690,24 @@
         "carbs": 4557.0,
         "protein": 2116.0,
         "ingredients": {
-            "1 whole Chicken": "",
-            "2 tbs Soy Sauce": "",
+            "1 whole Chicken": {
+                "1 whole Chicken": {
+                    "amount": "4 oz",
+                    "calories": "210kcal",
+                    "fat": "15.00g",
+                    "carbs": "0.00g",
+                    "protein": "19.00g"
+                }
+            },
+            "2 tbs Soy Sauce": {
+                "2 tbs Soy Sauce": {
+                    "amount": "100g",
+                    "calories": "53kcal",
+                    "fat": "0.04g",
+                    "carbs": "7.61g",
+                    "protein": "6.28g"
+                }
+            },
             "2 tsp Cornstarch": {
                 "2 tsp Cornstarch": {
                     "amount": "626g",
@@ -3093,16 +3717,88 @@
                     "protein": "21.16g"
                 }
             },
-            "2 cups  Coconut Milk": "",
-            "1 tbs Vegetable Oil": "",
-            "1 chopped Tomato": "",
+            "2 cups  Coconut Milk": {
+                "2 cups  Coconut Milk": {
+                    "amount": "100g",
+                    "calories": "230kcal",
+                    "fat": "23.84g",
+                    "carbs": "5.54g",
+                    "protein": "2.29g"
+                }
+            },
+            "1 tbs Vegetable Oil": {
+                "1 tbs Vegetable Oil": {
+                    "amount": "100g",
+                    "calories": "884kcal",
+                    "fat": "100.00g",
+                    "carbs": "0.00g",
+                    "protein": "0.00g"
+                }
+            },
+            "1 chopped Tomato": {
+                "1 chopped Tomato": {
+                    "amount": "1 cup",
+                    "calories": "100kcal",
+                    "fat": "2.50g",
+                    "carbs": "16.00g",
+                    "protein": "4.00g"
+                }
+            },
             "2 chopped Onions": "",
-            "2 chopped Garlic Clove": "",
-            "1 chopped Red Pepper": "",
-            "1 chopped Carrots": "",
-            "1 Lime": "",
-            "2 tsp Thyme": "",
-            "1 tsp  Allspice": ""
+            "2 chopped Garlic Clove": {
+                "2 chopped Garlic Clove": {
+                    "amount": "524g",
+                    "calories": "844kcal",
+                    "fat": "25.67g",
+                    "carbs": "43.55g",
+                    "protein": "104.77g"
+                }
+            },
+            "1 chopped Red Pepper": {
+                "1 chopped Red Pepper": {
+                    "amount": "100g",
+                    "calories": "20kcal",
+                    "fat": "0.21g",
+                    "carbs": "4.45g",
+                    "protein": "1.08g"
+                }
+            },
+            "1 chopped Carrots": {
+                "1 chopped Carrots": {
+                    "amount": "300g",
+                    "calories": "681kcal",
+                    "fat": "49.80g",
+                    "carbs": "6.33g",
+                    "protein": "48.84g"
+                }
+            },
+            "1 Lime": {
+                "1 Lime": {
+                    "amount": "100g",
+                    "calories": "30kcal",
+                    "fat": "0.20g",
+                    "carbs": "10.54g",
+                    "protein": "0.70g"
+                }
+            },
+            "2 tsp Thyme": {
+                "2 tsp Thyme": {
+                    "amount": "100g",
+                    "calories": "101kcal",
+                    "fat": "1.68g",
+                    "carbs": "24.45g",
+                    "protein": "5.56g"
+                }
+            },
+            "1 tsp  Allspice": {
+                "1 tsp  Allspice": {
+                    "amount": "100g",
+                    "calories": "263kcal",
+                    "fat": "8.69g",
+                    "carbs": "72.12g",
+                    "protein": "6.09g"
+                }
+            }
         }
     },
     "52952": {
@@ -3114,23 +3810,151 @@
         "carbs": 0.0,
         "protein": 0.0,
         "ingredients": {
-            "1/2 lb Beef": "",
-            "1 tsp  Minced Garlic": "",
-            "1 tsp  Ginger": "",
+            "1/2 lb Beef": {
+                "1/2 lb Beef": {
+                    "amount": "1 serving",
+                    "calories": "400kcal",
+                    "fat": "35.00g",
+                    "carbs": "1.00g",
+                    "protein": "22.00g"
+                }
+            },
+            "1 tsp  Minced Garlic": {
+                "1 tsp  Minced Garlic": {
+                    "amount": "3g",
+                    "calories": "4kcal",
+                    "fat": "0.02g",
+                    "carbs": "0.99g",
+                    "protein": "0.19g"
+                }
+            },
+            "1 tsp  Ginger": {
+                "1 tsp  Ginger": {
+                    "amount": "100g",
+                    "calories": "321kcal",
+                    "fat": "0.07g",
+                    "carbs": "82.74g",
+                    "protein": "0.35g"
+                }
+            },
             "1 cup  Bean Sprouts": "",
-            "1 cup  Mushrooms": "",
-            "1 cup  Water": "",
-            "1 tbs Oyster Sauce": "",
-            "1 tsp  Sugar": "",
-            "1 tsp  Soy Sauce": "",
-            "pinch Salt": "",
-            "pinch Pepper": "",
-            "2 tsp Sesame Seed Oil": "",
-            "1/2  Egg": "",
-            "3 tbs Starch": "",
-            "5 tbs Oil": "",
-            "1/4 lb Noodles": "",
-            "1/2 cup  Onion": ""
+            "1 cup  Mushrooms": {
+                "1 cup  Mushrooms": {
+                    "amount": "1 serving",
+                    "calories": "0kcal",
+                    "fat": "0.00g",
+                    "carbs": "1.00g",
+                    "protein": "1.00g"
+                }
+            },
+            "1 cup  Water": {
+                "1 cup  Water": {
+                    "amount": "100g",
+                    "calories": "0kcal",
+                    "fat": "0.00g",
+                    "carbs": "0.00g",
+                    "protein": "0.00g"
+                }
+            },
+            "1 tbs Oyster Sauce": {
+                "1 tbs Oyster Sauce": {
+                    "amount": "100g",
+                    "calories": "53kcal",
+                    "fat": "0.00g",
+                    "carbs": "13.42g",
+                    "protein": "0.01g"
+                }
+            },
+            "1 tsp  Sugar": {
+                "1 tsp  Sugar": {
+                    "amount": "1 serving",
+                    "calories": "15kcal",
+                    "fat": "0.00g",
+                    "carbs": "4.00g",
+                    "protein": "0.00g"
+                }
+            },
+            "1 tsp  Soy Sauce": {
+                "1 tsp  Soy Sauce": {
+                    "amount": "100g",
+                    "calories": "53kcal",
+                    "fat": "0.04g",
+                    "carbs": "7.61g",
+                    "protein": "6.28g"
+                }
+            },
+            "pinch Salt": {
+                "pinch Salt": {
+                    "amount": "15 chips",
+                    "calories": "150kcal",
+                    "fat": "10.00g",
+                    "carbs": "15.00g",
+                    "protein": "2.00g"
+                }
+            },
+            "pinch Pepper": {
+                "pinch Pepper": {
+                    "amount": "908g",
+                    "calories": "1326kcal",
+                    "fat": "85.71g",
+                    "carbs": "20.70g",
+                    "protein": "115.95g"
+                }
+            },
+            "2 tsp Sesame Seed Oil": {
+                "2 tsp Sesame Seed Oil": {
+                    "amount": "100g",
+                    "calories": "884kcal",
+                    "fat": "100.00g",
+                    "carbs": "0.00g",
+                    "protein": "0.00g"
+                }
+            },
+            "1/2  Egg": {
+                "1/2  Egg": {
+                    "amount": "100g",
+                    "calories": "111kcal",
+                    "fat": "2.74g",
+                    "carbs": "17.42g",
+                    "protein": "4.08g"
+                }
+            },
+            "3 tbs Starch": {
+                "3 tbs Starch": {
+                    "amount": "334g",
+                    "calories": "350kcal",
+                    "fat": "12.72g",
+                    "carbs": "37.62g",
+                    "protein": "20.40g"
+                }
+            },
+            "5 tbs Oil": {
+                "5 tbs Oil": {
+                    "amount": "100g",
+                    "calories": "884kcal",
+                    "fat": "100.00g",
+                    "carbs": "0.00g",
+                    "protein": "0.00g"
+                }
+            },
+            "1/4 lb Noodles": {
+                "1/4 lb Noodles": {
+                    "amount": "157g",
+                    "calories": "472kcal",
+                    "fat": "25.56g",
+                    "carbs": "30.31g",
+                    "protein": "28.36g"
+                }
+            },
+            "1/2 cup  Onion": {
+                "1/2 cup  Onion": {
+                    "amount": "100g",
+                    "calories": "189kcal",
+                    "fat": "12.41g",
+                    "carbs": "16.53g",
+                    "protein": "3.60g"
+                }
+            }
         }
     },
     "52959": {
@@ -3142,13 +3966,69 @@
         "carbs": 0.0,
         "protein": 0.0,
         "ingredients": {
-            "2 medium Fennel": "",
-            "2 tbs chopped Parsley": "",
-            "Juice of 1 Lemon": "",
-            "175g Cherry Tomatoes": "",
-            "1 tbs Olive Oil": "",
-            "350g Salmon": "",
-            "to serve Black Olives": ""
+            "2 medium Fennel": {
+                "2 medium Fennel": {
+                    "amount": "120g",
+                    "calories": "17kcal",
+                    "fat": "0.20g",
+                    "carbs": "3.56g",
+                    "protein": "0.83g"
+                }
+            },
+            "2 tbs chopped Parsley": {
+                "2 tbs chopped Parsley": {
+                    "amount": "100g",
+                    "calories": "36kcal",
+                    "fat": "0.79g",
+                    "carbs": "6.33g",
+                    "protein": "2.97g"
+                }
+            },
+            "Juice of 1 Lemon": {
+                "Juice of 1 Lemon": {
+                    "amount": "100g",
+                    "calories": "21kcal",
+                    "fat": "0.29g",
+                    "carbs": "6.48g",
+                    "protein": "0.40g"
+                }
+            },
+            "175g Cherry Tomatoes": {
+                "175g Cherry Tomatoes": {
+                    "amount": "100g",
+                    "calories": "18kcal",
+                    "fat": "0.20g",
+                    "carbs": "3.92g",
+                    "protein": "0.88g"
+                }
+            },
+            "1 tbs Olive Oil": {
+                "1 tbs Olive Oil": {
+                    "amount": "100g",
+                    "calories": "884kcal",
+                    "fat": "100.00g",
+                    "carbs": "0.00g",
+                    "protein": "0.00g"
+                }
+            },
+            "350g Salmon": {
+                "350g Salmon": {
+                    "amount": "1051g",
+                    "calories": "1586kcal",
+                    "fat": "79.10g",
+                    "carbs": "90.03g",
+                    "protein": "126.59g"
+                }
+            },
+            "to serve Black Olives": {
+                "to serve Black Olives": {
+                    "amount": "100g",
+                    "calories": "105kcal",
+                    "fat": "9.54g",
+                    "carbs": "6.06g",
+                    "protein": "0.88g"
+                }
+            }
         }
     },
     "52961": {
@@ -3160,14 +4040,78 @@
         "carbs": 0.0,
         "protein": 0.0,
         "ingredients": {
-            "500g Ricotta": "",
-            "4 large Eggs": "",
-            "3 tbs Flour": "",
-            "250g Sugar": "",
-            "1 tsp  Cinnamon": "",
-            "Grated Zest of 2 Lemons": "",
-            "5 tbs Dark Rum": "",
-            "sprinking Icing Sugar": ""
+            "500g Ricotta": {
+                "500g Ricotta": {
+                    "amount": "100g",
+                    "calories": "156kcal",
+                    "fat": "10.44g",
+                    "carbs": "4.09g",
+                    "protein": "11.32g"
+                }
+            },
+            "4 large Eggs": {
+                "4 large Eggs": {
+                    "amount": "1 egg",
+                    "calories": "70kcal",
+                    "fat": "5.00g",
+                    "carbs": "0.00g",
+                    "protein": "6.00g"
+                }
+            },
+            "3 tbs Flour": {
+                "3 tbs Flour": {
+                    "amount": "100g",
+                    "calories": "364kcal",
+                    "fat": "0.98g",
+                    "carbs": "76.31g",
+                    "protein": "10.33g"
+                }
+            },
+            "250g Sugar": {
+                "250g Sugar": {
+                    "amount": "100g",
+                    "calories": "387kcal",
+                    "fat": "0.00g",
+                    "carbs": "99.98g",
+                    "protein": "0.00g"
+                }
+            },
+            "1 tsp  Cinnamon": {
+                "1 tsp  Cinnamon": {
+                    "amount": "100g",
+                    "calories": "403kcal",
+                    "fat": "22.40g",
+                    "carbs": "44.60g",
+                    "protein": "7.00g"
+                }
+            },
+            "Grated Zest of 2 Lemons": {
+                "Grated Zest of 2 Lemons": {
+                    "amount": "100g",
+                    "calories": "431kcal",
+                    "fat": "28.61g",
+                    "carbs": "4.06g",
+                    "protein": "38.46g"
+                }
+            },
+            "5 tbs Dark Rum": {
+                "5 tbs Dark Rum": {
+                    "amount": "100g",
+                    "calories": "56kcal",
+                    "fat": "0.15g",
+                    "carbs": "8.51g",
+                    "protein": "0.11g"
+                }
+            },
+            "sprinking Icing Sugar": {
+                "sprinking Icing Sugar": {
+                    "amount": "1203g",
+                    "calories": "4377kcal",
+                    "fat": "196.98g",
+                    "carbs": "602.84g",
+                    "protein": "56.40g"
+                }
+            }
         }
     },
     "52965": {
@@ -3179,15 +4123,87 @@
         "carbs": 0.0,
         "protein": 0.0,
         "ingredients": {
-            "3 Medium Potatoes": "",
-            "1 tbs Olive Oil": "",
-            "2 strips Bacon": "",
-            "Minced Garlic Clove": "",
-            "1 tbs Maple Syrup": "",
-            "Garnish Parsley": "",
-            "Pinch Salt": "",
-            "Pinch Pepper": "",
-            "To taste Allspice": ""
+            "3 Medium Potatoes": {
+                "3 Medium Potatoes": {
+                    "amount": "1 serving",
+                    "calories": "400kcal",
+                    "fat": "18.00g",
+                    "carbs": "46.00g",
+                    "protein": "5.00g"
+                }
+            },
+            "1 tbs Olive Oil": {
+                "1 tbs Olive Oil": {
+                    "amount": "100g",
+                    "calories": "884kcal",
+                    "fat": "100.00g",
+                    "carbs": "0.00g",
+                    "protein": "0.00g"
+                }
+            },
+            "2 strips Bacon": {
+                "2 strips Bacon": {
+                    "amount": "1 serving",
+                    "calories": "100kcal",
+                    "fat": "8.00g",
+                    "carbs": "1.00g",
+                    "protein": "7.00g"
+                }
+            },
+            "Minced Garlic Clove": {
+                "Minced Garlic Clove": {
+                    "amount": "3g",
+                    "calories": "4kcal",
+                    "fat": "0.02g",
+                    "carbs": "0.99g",
+                    "protein": "0.19g"
+                }
+            },
+            "1 tbs Maple Syrup": {
+                "1 tbs Maple Syrup": {
+                    "amount": "100g",
+                    "calories": "261kcal",
+                    "fat": "0.20g",
+                    "carbs": "67.09g",
+                    "protein": "0.00g"
+                }
+            },
+            "Garnish Parsley": {
+                "Garnish Parsley": {
+                    "amount": "1 serving",
+                    "calories": "1272kcal",
+                    "fat": "56.00g",
+                    "carbs": "134.00g",
+                    "protein": "60.00g"
+                }
+            },
+            "Pinch Salt": {
+                "Pinch Salt": {
+                    "amount": "15 chips",
+                    "calories": "150kcal",
+                    "fat": "10.00g",
+                    "carbs": "15.00g",
+                    "protein": "2.00g"
+                }
+            },
+            "Pinch Pepper": {
+                "Pinch Pepper": {
+                    "amount": "908g",
+                    "calories": "1326kcal",
+                    "fat": "85.71g",
+                    "carbs": "20.70g",
+                    "protein": "115.95g"
+                }
+            },
+            "To taste Allspice": {
+                "To taste Allspice": {
+                    "amount": "100g",
+                    "calories": "263kcal",
+                    "fat": "8.69g",
+                    "carbs": "72.12g",
+                    "protein": "6.09g"
+                }
+            }
         }
     },
     "52979": {
@@ -3199,18 +4215,114 @@
         "carbs": 0.0,
         "protein": 0.0,
         "ingredients": {
-            "100g  Butter": "",
-            "50g Flour": "",
-            "2 Beaten  Eggs": "",
-            "50g Breadcrumbs": "",
-            "150g Flour": "",
-            "700ml Beef Stock": "",
-            "30g Onion": "",
-            "1 tbs Parsley": "",
-            "400g Beef": "",
-            "Pinch Salt": "",
-            "Pinch Pepper": "",
-            "Pinch Nutmeg": ""
+            "100g  Butter": {
+                "100g  Butter": {
+                    "amount": "100g",
+                    "calories": "717kcal",
+                    "fat": "81.11g",
+                    "carbs": "0.06g",
+                    "protein": "0.85g"
+                }
+            },
+            "50g Flour": {
+                "50g Flour": {
+                    "amount": "100g",
+                    "calories": "364kcal",
+                    "fat": "0.98g",
+                    "carbs": "76.31g",
+                    "protein": "10.33g"
+                }
+            },
+            "2 Beaten  Eggs": {
+                "2 Beaten  Eggs": {
+                    "amount": "112g",
+                    "calories": "238kcal",
+                    "fat": "21.14g",
+                    "carbs": "1.38g",
+                    "protein": "10.36g"
+                }
+            },
+            "50g Breadcrumbs": {
+                "50g Breadcrumbs": {
+                    "amount": "164g",
+                    "calories": "5kcal",
+                    "fat": "0.00g",
+                    "carbs": "1.05g",
+                    "protein": "0.21g"
+                }
+            },
+            "150g Flour": {
+                "150g Flour": {
+                    "amount": "100g",
+                    "calories": "364kcal",
+                    "fat": "0.98g",
+                    "carbs": "76.31g",
+                    "protein": "10.33g"
+                }
+            },
+            "700ml Beef Stock": {
+                "700ml Beef Stock": {
+                    "amount": "100g",
+                    "calories": "3kcal",
+                    "fat": "0.08g",
+                    "carbs": "0.33g",
+                    "protein": "0.35g"
+                }
+            },
+            "30g Onion": {
+                "30g Onion": {
+                    "amount": "107g",
+                    "calories": "269kcal",
+                    "fat": "3.30g",
+                    "carbs": "51.32g",
+                    "protein": "7.70g"
+                }
+            },
+            "1 tbs Parsley": {
+                "1 tbs Parsley": {
+                    "amount": "100g",
+                    "calories": "36kcal",
+                    "fat": "0.79g",
+                    "carbs": "6.33g",
+                    "protein": "2.97g"
+                }
+            },
+            "400g Beef": {
+                "400g Beef": {
+                    "amount": "101g",
+                    "calories": "290kcal",
+                    "fat": "19.70g",
+                    "carbs": "0.00g",
+                    "protein": "26.55g"
+                }
+            },
+            "Pinch Salt": {
+                "Pinch Salt": {
+                    "amount": "15 chips",
+                    "calories": "150kcal",
+                    "fat": "10.00g",
+                    "carbs": "15.00g",
+                    "protein": "2.00g"
+                }
+            },
+            "Pinch Pepper": {
+                "Pinch Pepper": {
+                    "amount": "908g",
+                    "calories": "1326kcal",
+                    "fat": "85.71g",
+                    "carbs": "20.70g",
+                    "protein": "115.95g"
+                }
+            },
+            "Pinch Nutmeg": {
+                "Pinch Nutmeg": {
+                    "amount": "100g",
+                    "calories": "525kcal",
+                    "fat": "36.31g",
+                    "carbs": "49.29g",
+                    "protein": "5.84g"
+                }
+            }
         }
     },
     "52995": {
@@ -3222,19 +4334,123 @@
         "carbs": 0.0,
         "protein": 0.0,
         "ingredients": {
-            "2 Potatoes": "",
-            "  Sugar": "",
-            "  Vegetable Oil": "",
-            "  Salt": "",
-            "  Pepper": "",
-            "1 Red Onions": "",
-            "2 cloves Garlic": "",
-            "1 Lime": "",
-            "2 Bread": "",
-            "1 lb Pork": "",
-            "  Barbeque Sauce": "",
-            "  Hotsauce": "",
-            "  Tomato Ketchup": ""
+            "2 Potatoes": {
+                "2 Potatoes": {
+                    "amount": "987g",
+                    "calories": "947kcal",
+                    "fat": "26.15g",
+                    "carbs": "153.74g",
+                    "protein": "27.33g"
+                }
+            },
+            "  Sugar": {
+                "  Sugar": {
+                    "amount": "100g",
+                    "calories": "387kcal",
+                    "fat": "0.00g",
+                    "carbs": "99.98g",
+                    "protein": "0.00g"
+                }
+            },
+            "  Vegetable Oil": {
+                "  Vegetable Oil": {
+                    "amount": "100g",
+                    "calories": "884kcal",
+                    "fat": "100.00g",
+                    "carbs": "0.00g",
+                    "protein": "0.00g"
+                }
+            },
+            "  Salt": {
+                "  Salt": {
+                    "amount": "100g",
+                    "calories": "0kcal",
+                    "fat": "0.00g",
+                    "carbs": "0.00g",
+                    "protein": "0.00g"
+                }
+            },
+            "  Pepper": {
+                "  Pepper": {
+                    "amount": "100g",
+                    "calories": "26kcal",
+                    "fat": "0.30g",
+                    "carbs": "6.03g",
+                    "protein": "0.99g"
+                }
+            },
+            "1 Red Onions": {
+                "1 Red Onions": {
+                    "amount": "100g",
+                    "calories": "42kcal",
+                    "fat": "0.08g",
+                    "carbs": "10.11g",
+                    "protein": "0.92g"
+                }
+            },
+            "2 cloves Garlic": {
+                "2 cloves Garlic": {
+                    "amount": "1 tbsp",
+                    "calories": "5kcal",
+                    "fat": "0.00g",
+                    "carbs": "1.00g",
+                    "protein": "0.00g"
+                }
+            },
+            "1 Lime": {
+                "1 Lime": {
+                    "amount": "100g",
+                    "calories": "30kcal",
+                    "fat": "0.20g",
+                    "carbs": "10.54g",
+                    "protein": "0.70g"
+                }
+            },
+            "2 Bread": {
+                "2 Bread": {
+                    "amount": "100g",
+                    "calories": "273kcal",
+                    "fat": "4.78g",
+                    "carbs": "48.14g",
+                    "protein": "8.50g"
+                }
+            },
+            "1 lb Pork": {
+                "1 lb Pork": {
+                    "amount": "1407g",
+                    "calories": "2208kcal",
+                    "fat": "99.30g",
+                    "carbs": "237.84g",
+                    "protein": "89.60g"
+                }
+            },
+            "  Barbeque Sauce": {
+                "  Barbeque Sauce": {
+                    "amount": "2 tbsp",
+                    "calories": "60kcal",
+                    "fat": "0.00g",
+                    "carbs": "14.00g",
+                    "protein": "0.00g"
+                }
+            },
+            "  Hotsauce": {
+                "  Hotsauce": {
+                    "amount": "1 tsp",
+                    "calories": "0kcal",
+                    "fat": "0.00g",
+                    "carbs": "0.00g",
+                    "protein": "0.00g"
+                }
+            },
+            "  Tomato Ketchup": {
+                "  Tomato Ketchup": {
+                    "amount": "1 tbsp",
+                    "calories": "20kcal",
+                    "fat": "0.00g",
+                    "carbs": "5.00g",
+                    "protein": "0.00g"
+                }
+            }
         }
     },
     "52997": {
@@ -3246,14 +4462,78 @@
         "carbs": 0.0,
         "protein": 0.0,
         "ingredients": {
-            "White Rice": "",
-            "1 Onion": "",
-            "1 Lime": "",
-            "3 Garlic Clove": "",
-            "1 Cucumber": "",
-            "3 oz  Carrots": "",
-            "1 lb Ground Beef": "",
-            "2 oz  Soy Sauce": ""
+            "White Rice": {
+                "White Rice": {
+                    "amount": "160g",
+                    "calories": "206kcal",
+                    "fat": "0.45g",
+                    "carbs": "44.50g",
+                    "protein": "4.24g"
+                }
+            },
+            "1 Onion": {
+                "1 Onion": {
+                    "amount": "100g",
+                    "calories": "303kcal",
+                    "fat": "5.09g",
+                    "carbs": "60.32g",
+                    "protein": "7.48g"
+                }
+            },
+            "1 Lime": {
+                "1 Lime": {
+                    "amount": "100g",
+                    "calories": "30kcal",
+                    "fat": "0.20g",
+                    "carbs": "10.54g",
+                    "protein": "0.70g"
+                }
+            },
+            "3 Garlic Clove": {
+                "3 Garlic Clove": {
+                    "amount": "2 oz",
+                    "calories": "120kcal",
+                    "fat": "0.00g",
+                    "carbs": "25.00g",
+                    "protein": "4.00g"
+                }
+            },
+            "1 Cucumber": {
+                "1 Cucumber": {
+                    "amount": "100g",
+                    "calories": "12kcal",
+                    "fat": "0.16g",
+                    "carbs": "2.16g",
+                    "protein": "0.59g"
+                }
+            },
+            "3 oz  Carrots": {
+                "3 oz  Carrots": {
+                    "amount": "1 serving",
+                    "calories": "45kcal",
+                    "fat": "0.00g",
+                    "carbs": "11.00g",
+                    "protein": "1.00g"
+                }
+            },
+            "1 lb Ground Beef": {
+                "1 lb Ground Beef": {
+                    "amount": "100g",
+                    "calories": "254kcal",
+                    "fat": "19.98g",
+                    "carbs": "0.00g",
+                    "protein": "17.15g"
+                }
+            },
+            "2 oz  Soy Sauce": {
+                "2 oz  Soy Sauce": {
+                    "amount": "140g",
+                    "calories": "59kcal",
+                    "fat": "0.32g",
+                    "carbs": "12.73g",
+                    "protein": "0.92g"
+                }
+            }
         }
     },
     "53013": {
@@ -3265,12 +4545,60 @@
         "carbs": 0.0,
         "protein": 0.0,
         "ingredients": {
-            "400g Minced Beef": "",
-            "Pinch Pepper": "",
-            "2 tsp Mustard": "",
-            "1 1/2 tsp  Onion Salt": "",
-            "1 1/2 tsp  Garlic Powder": "",
-            "1/2 tsp Paprika": "",
+            "400g Minced Beef": {
+                "400g Minced Beef": {
+                    "amount": "300g",
+                    "calories": "681kcal",
+                    "fat": "49.80g",
+                    "carbs": "6.33g",
+                    "protein": "48.84g"
+                }
+            },
+            "Pinch Pepper": {
+                "Pinch Pepper": {
+                    "amount": "908g",
+                    "calories": "1326kcal",
+                    "fat": "85.71g",
+                    "carbs": "20.70g",
+                    "protein": "115.95g"
+                }
+            },
+            "2 tsp Mustard": {
+                "2 tsp Mustard": {
+                    "amount": "1 serving",
+                    "calories": "0kcal",
+                    "fat": "0.00g",
+                    "carbs": "0.00g",
+                    "protein": "0.00g"
+                }
+            },
+            "1 1/2 tsp  Onion Salt": {
+                "1 1/2 tsp  Onion Salt": {
+                    "amount": "107g",
+                    "calories": "269kcal",
+                    "fat": "3.30g",
+                    "carbs": "51.32g",
+                    "protein": "7.70g"
+                }
+            },
+            "1 1/2 tsp  Garlic Powder": {
+                "1 1/2 tsp  Garlic Powder": {
+                    "amount": "100g",
+                    "calories": "332kcal",
+                    "fat": "0.76g",
+                    "carbs": "72.71g",
+                    "protein": "16.80g"
+                }
+            },
+            "1/2 tsp Paprika": {
+                "1/2 tsp Paprika": {
+                    "amount": "100g",
+                    "calories": "289kcal",
+                    "fat": "12.95g",
+                    "carbs": "55.74g",
+                    "protein": "14.76g"
+                }
+            },
             "2 tbs Olive Oil": "",
             "2 Sesame Seed Burger Buns": "",
             "Chopped Onion": "",

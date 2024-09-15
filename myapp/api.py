@@ -6,6 +6,12 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 app = Flask(__name__)
 CORS(app)
 
+'''
+Description: Backend function called by frontend. Gets the recipe information of recipes that fit the minCalories, 
+maxCalories, maxFat, maxCarbs, minProtein, and ingredient restrictions
+Parameters: None
+Return: a json of all the recipes that fit the ingredient restrictions
+'''
 @app.route('/api/route', methods=['POST'])
 def returnFoodList():
     data = request.get_json()
@@ -37,7 +43,12 @@ def returnFoodList():
                 resulting_recipes.append(recipe_info)
     return jsonify(resulting_recipes)
 
-# helper function     
+'''
+Description: Calls the searchRecipe function given an ingredient and gets all the names, links, images, and ids of all the 
+meals containing that ingredient.
+Parameters: ingredient - an ingredient of type string
+Return: a list of lists containing the names, links, images, and ids of all meals containing ingredient
+'''    
 def fromIngredient(ingredient):
     names, links, images, ids = searchRecipe(ingredient)
     recipes = []
