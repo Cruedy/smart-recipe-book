@@ -15,6 +15,13 @@ In addition to this, I also queried Greptile to generate a developer guide for t
 ### Extra Tools used
 I ran into a couple environment errors for running some of the libraries I used, so I used ChatGPT and Google to resolve those issues.
 
+### Special Concepts Used
+#### Regular Expressions
+In the files `ingredientSearch.py` and `rateLimitMonitor.py` I used regular expressions to parse large amounts of data in order to get the strings I needed.
+
+#### Multithreading/Concurrency
+In the file `recipeSearch.py`, I used multithreading to speed up the process of getting all recipes in the function `getAllRecipes()`. I did this by allowing 5 calls to happen at the same time, which reduces the amount of individual time that each call takes.
+
 ### How to start backend
 cd myapp
 source .venv/bin/activate

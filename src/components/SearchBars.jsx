@@ -20,31 +20,14 @@ function SearchBars({ onSearch }) {
     onSearch(searchData);
   }
 
-  // const inputMinCal = event => {
-  //   setCalorieMinValue(event.target.value)
-  // }
-  // const inputMaxCal = event => {
-  //   setCalorieMaxValue(event.target.value)
-  // }
-  // const inputFat = event => {
-  //   setFatValue(event.target.value)
-  // }
-  // const inputCarbs = event => {
-  //   setCarbsValue(event.target.value)
-  // }
-  // const inputProtein = event => {
-  //   setProteinValue(event.target.value)
-  // }
-  // const inputIngredient = event => {
-  //   setIngredientValue(event.target.value)
-  // }
+
   return (
     <div>
-      <input placeholder="Min Calories..." onChange={e => setCalorieMinValue(e.target.value)} value={calorieMinValue} />
-      <input placeholder="Max Calories..." onChange={e => setCalorieMaxValue(e.target.value)} value={calorieMaxValue} />
-      <input placeholder="Max Fat..." onChange={e => setFatValue(e.target.value)} value={fatValue} />
-      <input placeholder="Max Carbs..." onChange={e => setCarbsValue(e.target.value)} value={carbsValue} />
-      <input placeholder="Min Protein..." onChange={e => setProteinValue(e.target.value)} value={proteinValue} />
+      <input placeholder="Min Calories..." onChange={e => setCalorieMinValue(e.target.value)} value={calorieMinValue === 0 ? '' : calorieMinValue} />
+      <input placeholder="Max Calories..." onChange={e => setCalorieMaxValue(e.target.value)} value={calorieMaxValue === 0 ? '' : calorieMaxValue} />
+      <input placeholder="Max Fat..." onChange={e => setFatValue(e.target.value)} value={fatValue === 0 ? '' : fatValue} />
+      <input placeholder="Max Carbs..." onChange={e => setCarbsValue(e.target.value)} value={carbsValue === 0 ? '' : carbsValue} />
+      <input placeholder="Min Protein..." onChange={e => setProteinValue(e.target.value)} value={proteinValue === 0 ? '' : proteinValue} />
       <br></br>
       <input placeholder="Ingredient..." onChange={e => setIngredientValue(e.target.value)} value={ingredientValue} />
       <br></br>
