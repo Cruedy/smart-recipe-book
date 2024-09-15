@@ -1,5 +1,7 @@
 # Smart Recipe Book
 ## Intro
+I created a Smart Recipe Book, this is particularly useful for me because when I cook, I like to consider how healthy the recipes that I'm cooking are. This is usually a pretty tedious process because I have to measure each ingredient from the recipe, then look up the nutritional facts of each ingredient, then add up the nutritional facts. This website allows me to filter out recipes that already don't fit my needs nutritionally.
+
 ### How I used Greptile
 I used Greptile as a rate limit checker for my backend code. I'm using the Fat Secret Platform API:
 https://platform.fatsecret.com/docs/v4/food.get
