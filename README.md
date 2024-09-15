@@ -1,33 +1,34 @@
 # Smart Recipe Book
-
-## How I used Greptile
-### Intro
+## Intro
+### How I used Greptile
 I used Greptile as a rate limit checker for my backend code. I'm using the Fat Secret Platform API:
 https://platform.fatsecret.com/docs/v4/food.get
-which has a rate limit of 5,000 calls per day. In my code, I have to make over 5,000 calls to the api in order to gather information. Ive decreased the number of times this has to be done by gathering the information from the Fat Secret API, and creating a json file called recipes.json.
-## APIs used
+which has a rate limit of 5,000 calls per day. In my code, I have to make over 5,000 calls to the api in order to gather information. Ive decreased the number of times this has to be done by gathering the information from the Fat Secret API, and creating a json file called `recipes.json`. Is all written in `rateLimitMonitor.py`. Greptile is used to check the code base and find out what the rate limit of the Fat Secret API is, and find out when I can next call the API once the rate limit has been met.
 
-https://www.themealdb.com/api.php
-https://docs.greptile.com/introduction
+In addition to this, I also queried Greptile to generate a developer guide for this codebase and add it to this `ReadMe.md` in markdown format.
 
-## How to start frontend
-npm start
+### APIs used
+[Greptile](https://docs.greptile.com/introduction)
+[MealDB](https://www.themealdb.com/api.php)
+[FatSecret](https://link-url-here.org)
 
-## How to start backend
+### Extra Tools used
+I ran into a couple environment errors for running some of the libraries I used, so I used ChatGPT and Google to resolve those issues.
+
+### How to start backend
 cd myapp
-source venev/bin/activate
+source .venv/bin/activate
 flask run
 
-
-# Getting Started with Create React App
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+#### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -35,12 +36,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+#### `npm test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+#### `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -50,7 +51,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+#### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
@@ -60,45 +61,45 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+#### Code Splitting
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+#### Analyzing the Bundle Size
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+#### Making a Progressive Web App
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+#### Advanced Configuration
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+#### Deployment
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+#### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-### Developer Guide
-## Code Description
-### /myapp/api.py
+## Developer Guide(Generated by Greptile)
+### Code Description
+#### /myapp/api.py
 The `/myapp/api.py` file defines a Flask web application that provides an API endpoint for filtering and returning recipes based on nutritional criteria and ingredients. It utilizes CORS for cross-origin requests and includes a rate limit monitoring feature.
 
-### Overall Summary
+##### Overall Summary
 The file sets up a Flask application with a single API endpoint (`/api/route`) that processes POST requests to filter recipes based on nutritional criteria and a specified ingredient. It reads from a `recipes.json` file and uses a helper function to retrieve recipe details.
 
-### Class and Function Summaries
+##### Class and Function Summaries
 
 - **`app`**: An instance of the Flask application, which serves as the main entry point for handling web requests.
 
